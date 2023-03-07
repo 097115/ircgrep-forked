@@ -177,7 +177,7 @@ fn process_file_count(
 }
 
 fn get_log_files(settings: &Settings) -> Vec<path::PathBuf> {
-    let logdir = env::var("HOME").expect("HOME not set??") + "/.weechat/logs";
+    let logdir = env::var("HOME").expect("HOME not set??") + "/.local/share/weechat/logs";
     let logpath = path::Path::new(&logdir);
 
     let file_pattern = format!(
